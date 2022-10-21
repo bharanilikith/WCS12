@@ -25,8 +25,12 @@ public class Test0 {
 	
 	Robot r=new Robot();
 	r.keyPress(KeyEvent.VK_DOWN);
+	r.keyPress(KeyEvent.VK_DOWN);
+	r.keyPress(KeyEvent.VK_DOWN);
 	r.keyPress(KeyEvent.VK_ENTER);
 	
+	r.keyRelease(KeyEvent.VK_DOWN);
+	r.keyRelease(KeyEvent.VK_DOWN);
 	r.keyRelease(KeyEvent.VK_DOWN);
 	r.keyRelease(KeyEvent.VK_ENTER);
 	
