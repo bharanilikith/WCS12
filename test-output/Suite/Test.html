@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 30 08:39:33 IST 2022</td>
+<td>Started on:</td><td>Sun Oct 30 09:02:58 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7174 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22652 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,54 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testng.Testcase1.tc1()'><b>tc1</b><br>Test class: testng.Testcase1<br/>
-<a href="#Output-66774422" onClick='toggleBox("Output-66774422", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-66774422" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-66774422">
-actiTIME - Login<br/>
-https://demo.actitime.com/login.do<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [35467rfghghj] but found [actiTIME - Login]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testng.Testcase1.tc1(Testcase1.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<td title='testng.Testcase1.tc1()'><b>tc1</b><br>Test class: testng.Testcase1</td>
+<td><div><pre>java.lang.AssertionError: expected [1324werte456456] but found [actiTIME - Login]
+	at testng.Testcase1.tc1(Testcase1.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace66774422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace66774422'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [35467rfghghj] but found [actiTIME - Login]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testng.Testcase1.tc1(Testcase1.java:42)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1247348185", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1247348185'><pre>java.lang.AssertionError: expected [1324werte456456] but found [actiTIME - Login]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at testng.Testcase1.tc1(Testcase1.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,7 +118,41 @@ https://demo.actitime.com/login.do<br/>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testng.Testcase1@2cd2a21f</td></tr>
+<td>testng.Testcase1@69e1dd28</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testng.Testcase2.tc2()'><b>tc2</b><br>Test class: testng.Testcase2<br/>
+<a href="#Output-184133791" onClick='toggleBox("Output-184133791", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-184133791" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-184133791">
+actiTIME - Login<br/>
+https://demo.actitime.com/login.do<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng.Testcase2@3059cbc</td></tr>
+<tr>
+<td title='testng.Testcase3.tc3()'><b>tc3</b><br>Test class: testng.Testcase3<br/>
+<a href="#Output-1992525817" onClick='toggleBox("Output-1992525817", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1992525817" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1992525817">
+actiTIME - Login<br/>
+https://demo.actitime.com/login.do<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testng.Testcase3@7ea9e1e2</td></tr>
 </table><p>
 </body>
 </html>
